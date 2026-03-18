@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Voyage en Chine - Livre d'or</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif SC', serif;
+    background: linear-gradient(135deg, #2b0000, #5a0f0f);
+    color: #f5e6c8;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 30px rgba(212,175,55,0.2);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #e6c200;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #2c2c2c;
+    color: white;
+}
+
+textarea {
+    height: 120px;
+}
+
+.center-block {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 26px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+}
+
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #d4af37, #b8962e);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffd700, #c9a227);
+}
+
+.decoration {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="decoration">— 旅 —</div>
+
+<h1>Voyage en Chine</h1>
+<p class="subtitle">Voyage initiatique & découverte</p>
+
+<form>
+
+<label>Nom du voyageur</label>
+<input type="text" placeholder="Votre nom">
+
+<label>Province visitée</label>
+<select>
+<option>Choisir une province</option>
+<option>Pékin</option>
+<option>Shanghai</option>
+<option>Sichuan</option>
+<option>Yunnan</option>
+<option>Guangdong</option>
+<option>Guangxi</option>
+<option>Zhejiang</option>
+<option>Fujian</option>
+<option>Hunan</option>
+<option>Shaanxi</option>
+<option>Tibet</option>
+<option>Xinjiang</option>
+</select>
+
+<label>Ville(s) visitée(s)</label>
+<input type="text" placeholder="Ex : Pékin, Xi’an, Shanghai...">
+
+<label>Période</label>
+<select>
+<option>Choisir une période</option>
+<option>Printemps 🌸</option>
+<option>Été ☀️</option>
+<option>Automne 🍂</option>
+<option>Hiver ❄️</option>
+</select>
+
+<label>Témoignage</label>
+<textarea placeholder="Exprimez votre expérience, votre ressenti..."></textarea>
+
+<div class="center-block">
+
+<label>Organisation</label>
+<div class="stars">
+<input type="radio" name="org" id="org5"><label for="org5">★</label>
+<input type="radio" name="org" id="org4"><label for="org4">★</label>
+<input type="radio" name="org" id="org3"><label for="org3">★</label>
+<input type="radio" name="org" id="org2"><label for="org2">★</label>
+<input type="radio" name="org" id="org1"><label for="org1">★</label>
+</div>
+
+<label>Hébergement</label>
+<div class="stars">
+<input type="radio" name="heb" id="heb5"><label for="heb5">★</label>
+<input type="radio" name="heb" id="heb4"><label for="heb4">★</label>
+<input type="radio" name="heb" id="heb3"><label for="heb3">★</label>
+<input type="radio" name="heb" id="heb2"><label for="heb2">★</label>
+<input type="radio" name="heb" id="heb1"><label for="heb1">★</label>
+</div>
+
+<label>Cuisine</label>
+<div class="stars">
+<input type="radio" name="cuisine" id="c5"><label for="c5">★</label>
+<input type="radio" name="cuisine" id="c4"><label for="c4">★</label>
+<input type="radio" name="cuisine" id="c3"><label for="c3">★</label>
+<input type="radio" name="cuisine" id="c2"><label for="c2">★</label>
+<input type="radio" name="cuisine" id="c1"><label for="c1">★</label>
+</div>
+
+<label>Expérience globale</label>
+<div class="stars">
+<input type="radio" name="global" id="g5"><label for="g5">★</label>
+<input type="radio" name="global" id="g4"><label for="g4">★</label>
+<input type="radio" name="global" id="g3"><label for="g3">★</label>
+<input type="radio" name="global" id="g2"><label for="g2">★</label>
+<input type="radio" name="global" id="g1"><label for="g1">★</label>
+</div>
+
+<button type="submit">Envoyer mon témoignage</button>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
